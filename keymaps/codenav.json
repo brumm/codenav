@@ -1,0 +1,6 @@
+{
+  "atom-workspace": {
+    "ctrl-alt-o": "codenav:toggle",
+    "ctrl-alt-p": "codenav:highlightCurrentScope"
+  }
+}

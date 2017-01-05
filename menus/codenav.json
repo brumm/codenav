@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle codenav",
+        "command": "codenav:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "codenav",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "codenav:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
