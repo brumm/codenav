@@ -5,17 +5,19 @@
 @import "ui-variables";
 
 .codenav {
-  padding: 10px;
-  max-width: 15vw;
-
-  .inline-block {
-    margin-right: 4px;
-  }
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  -webkit-user-select: none;
 }
 
-.codenav-highlight .region {
-  background-color: rgba(0, 0, 0, 0.1);
-  position: absolute;
-  pointer-events: none;
-  z-index: -1;
+.list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+  top: 1px;
+}
+
+
+.needs-spacer {
+  & + &:before {
+    content: ', '
+  }
 }
