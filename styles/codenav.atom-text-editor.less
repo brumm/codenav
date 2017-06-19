@@ -9,12 +9,15 @@
   padding-left: 5px;
   padding-right: 10px;
   -webkit-user-select: none;
-}
 
-.list-tree.has-collapsable-children .list-nested-item > .list-item::before {
-  top: 1px;
-}
+  .list-group li:not(.list-nested-item).selected, .list-tree li:not(.list-nested-item).selected, .list-group li.list-nested-item.selected > .list-item, .list-tree li.list-nested-item.selected > .list-item {
+    color: @text-color-info;
+  }
 
+  .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+    top: 1px;
+  }
+}
 
 .needs-spacer {
   & + &:before {
