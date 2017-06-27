@@ -2,9 +2,9 @@
   "name": "codenav",
   "main": "./lib/codenav",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
-  "repository": "https://github.com/atom/codenav",
+  "description": "do interesting stuff with a javascript file's AST",
+  "keywords": ["AST", "javascript", "IDE", "function", "list"],
+  "repository": "https://github.com/brumm/codenav",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
