@@ -1,5 +1,3 @@
-# codenav package
+# codenav
 
-A short description of your package.
-
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+exploring what an javascript IDE-like experience for atom could be like, currently integrating babylon and showing imports/exports/classes/functions/methods from the current file
