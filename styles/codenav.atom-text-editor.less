@@ -19,6 +19,10 @@
   }
 }
 
+.selected ~ .selected:before {
+  background-color: lighten(#24282E, 5%) !important;
+}
+
 .needs-spacer {
   & + &:before {
     content: ', '
