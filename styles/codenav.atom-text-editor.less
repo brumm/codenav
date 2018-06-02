@@ -2,7 +2,14 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
-@import "ui-variables";
+@import 'ui-variables';
+
+.codenav-container {
+  font-family: var(--editor-font-family);
+  font-size: var(--editor-font-size);
+  line-height: var(--editor-line-height);
+  overflow: auto;
+}
 
 .codenav {
   padding-top: 5px;
@@ -10,21 +17,17 @@
   padding-right: 10px;
   -webkit-user-select: none;
 
-  .list-group li:not(.list-nested-item).selected, .list-tree li:not(.list-nested-item).selected, .list-group li.list-nested-item.selected > .list-item, .list-tree li.list-nested-item.selected > .list-item {
-    color: @text-color-info;
-  }
-
   .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
     top: 1px;
   }
 }
 
 .selected ~ .selected:before {
-  background-color: lighten(#24282E, 5%) !important;
+  background-color: lighten(#24282e, 5%) !important;
 }
 
 .needs-spacer {
   & + &:before {
-    content: ', '
+    content: ', ';
   }
 }
