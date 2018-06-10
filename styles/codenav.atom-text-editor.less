@@ -4,30 +4,36 @@
 // for a full listing of what's available.
 @import 'ui-variables';
 
-.codenav-container {
+.codenav {
   font-family: var(--editor-font-family);
-  font-size: var(--editor-font-size);
+  font-size: ~'calc(var(--editor-font-size) * 0.9)';
   line-height: var(--editor-line-height);
   overflow: auto;
 }
 
-.codenav {
+.symbols-view {
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 10px;
   -webkit-user-select: none;
 
-  .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+  .has-collapsable-children .list-nested-item > .list-item::before {
     top: 1px;
+  }
+
+  .list-nested-item + .list-nested-item {
+    margin-top: 5px;
+    border-top: 0.5px solid #131519;
+    padding-top: 5px;
   }
 }
 
-.selected ~ .selected:before {
+.selected ~ .selected::before {
   background-color: lighten(#24282e, 5%) !important;
 }
 
 .needs-spacer {
-  & + &:before {
+  & + &::before {
     content: ', ';
   }
 }
