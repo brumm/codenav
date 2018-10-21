@@ -1,9 +1,15 @@
 {
   "name": "narrow-codenav",
   "main": "./lib/codenav",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "do interesting stuff with a javascript file's AST",
-  "keywords": ["AST", "javascript", "IDE", "function", "list"],
+  "keywords": [
+    "AST",
+    "javascript",
+    "IDE",
+    "function",
+    "list"
+  ],
   "repository": "https://github.com/brumm/codenav",
   "license": "MIT",
   "engines": {
